@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import SearchMovie from './SearchMovie';
 
+class Main extends React.Component{
+  render(){
+    return (
+     <div className='container'>
+        <SearchMovie/>
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(
-
-    <App />,
+  <Main/>,
   document.getElementById('root')
-);
-
+)
